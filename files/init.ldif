@@ -1,0 +1,24 @@
+dn: dc=my-domain,dc=com
+objectclass: dcObject
+objectclass: organization
+o: Example Company
+dc: my-domain
+
+dn: ou=users,dc=my-domain,dc=com
+objectClass: organizationalUnit
+ou: users
+
+dn: cn=Manager,dc=my-domain,dc=com
+objectclass: organizationalRole
+cn: Manager
+
+dn: cn=alan,ou=Users,dc=my-domain,dc=com
+sn: Ash
+cn: alan
+objectclass: person
+
+dn: cn=bob,ou=Users,dc=my-domain,dc=com
+sn: Bobby
+cn: bob
+objectclass: person
+
