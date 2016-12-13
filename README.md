@@ -1,4 +1,4 @@
-# Minimal Alpine based Openldap serer for Docker
+# Minimal Alpine based Openldap server for Docker
 
 Use the following to docker build then run 
 ```
@@ -23,7 +23,7 @@ maxsize		1073741824
 suffix		"dc=my-domain,dc=com"
 rootdn		"cn=Manager,dc=my-domain,dc=com"
 rootpw		secret
-index	objectClass	eq
+index	        objectClass	eq
 ```
 
 Groups and users are added in `files/init.ldif`.  One may add new entities using the following:
