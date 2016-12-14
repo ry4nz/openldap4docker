@@ -6,9 +6,11 @@ RUN apk add --no-cache busybox musl libldap libltdl libsasl libuuid openldap ope
 
 ADD files /ldap
 
+RUN cat /ldap/tls.conf >> /etc/openldap/slapd.conf
+
 RUN slapadd -v -l /ldap/init.ldif 
 
-EXPOSE 389 636
+EXPOSE 389
 
 CMD slapd -d 256
 

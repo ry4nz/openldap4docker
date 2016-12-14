@@ -15,10 +15,29 @@ cn: Manager
 dn: cn=alan,ou=Users,dc=my-domain,dc=com
 sn: Ash
 cn: alan
+userPassword: alanpassword
 objectclass: person
 
 dn: cn=bob,ou=Users,dc=my-domain,dc=com
 sn: Bobby
 cn: bob
+userPassword: bobpassword
 objectclass: person
+
+dn: cn=cindy,ou=Users,dc=my-domain,dc=com
+sn: Cox
+cn: cindy
+userPassword: cindypassword
+objectclass: person
+
+dn: ou=groups,dc=my-domain,dc=com
+objectClass: organizationalUnit
+ou: Groups
+
+dn: cn=team,ou=groups,dc=my-domain,dc=com
+objectClass: groupofnames
+cn: team
+description: Team
+member: cn=alan,ou=Users,dc=my-domain,dc=com
+member: cn=bob,ou=Users,dc=my-domain,dc=com
 
