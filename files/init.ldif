@@ -41,12 +41,6 @@ description: Team
 member: cn=alan,ou=Users,dc=my-domain,dc=com
 member: cn=bob,ou=Users,dc=my-domain,dc=com
 
-dn: cn=taylor,ou=Users,dc=my-domain,dc=com
-sn: Thompson
-cn: taylor
-userPassword: taylorpassword
-objectclass: person
-
 dn: cn=sammy,ou=Users,dc=my-domain,dc=com
 sn: Smith
 cn: sammy
@@ -63,12 +57,11 @@ dn: cn=finance,ou=groups,dc=my-domain,dc=com
 objectClass: groupofnames
 cn: finance
 description: Finance Team
-member: cn=sammy,ou=Users,dc=my-domain,dc=com
 member: cn=robin,ou=Users,dc=my-domain,dc=com
 
 dn: cn=engineering,ou=groups,dc=my-domain,dc=com
 objectClass: groupofnames
 cn: engineering
 description: Engineering Team
-member: cn=taylor,ou=Users,dc=my-domain,dc=com
+member: cn=sammy,ou=Users,dc=my-domain,dc=com
 member: cn=robin,ou=Users,dc=my-domain,dc=com
